@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="864.0" prefWidth="1536.0" style="-fx-background-color: #eba8a2;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.posone.MainController">
+   <children>
+      <HBox prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="864.0" prefWidth="1164.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="202.0" prefWidth="1176.0">
+                     <children>
+                        <ImageView fitHeight="204.0" fitWidth="231.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                        <VBox prefHeight="240.0" prefWidth="1213.0" style="-fx-background-color: #ca5246; -fx-background-radius: 10 0 0 10;">
+                           <children>
+                              <Label text="SALES">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-background-color: #c15045; -fx-background-radius: 10;">
+                                 <children>
+                                    <HBox prefHeight="115.0" prefWidth="1213.0">
+                                       <children>
+                                          <VBox alignment="TOP_CENTER" prefHeight="98.0" prefWidth="132.0" HBox.hgrow="ALWAYS">
+                                             <children>
+                                                <Label style="-fx-font-weight: bold;" text="Código" textFill="WHITE">
+                                                   <VBox.margin>
+                                                      <Insets bottom="10.0" />
+                                                   </VBox.margin>
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="textFieldproductCpde" prefHeight="40.0">
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </TextField>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets left="20.0" right="10.0" />
+                                             </HBox.margin>
+                                          </VBox>
+                                          <VBox alignment="TOP_CENTER" layoutX="11.0" layoutY="11.0" prefHeight="98.0" prefWidth="132.0" HBox.hgrow="ALWAYS">
+                                             <children>
+                                                <Label style="-fx-font-weight: bold;" text="Nome do produto" textFill="WHITE">
+                                                   <VBox.margin>
+                                                      <Insets bottom="10.0" />
+                                                   </VBox.margin>
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="textFieldProductName" prefHeight="40.0">
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </TextField>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                             </HBox.margin>
+                                          </VBox>
+                                          <VBox alignment="TOP_CENTER" layoutX="275.0" layoutY="11.0" prefHeight="98.0" prefWidth="132.0" HBox.hgrow="ALWAYS">
+                                             <children>
+                                                <Label style="-fx-font-weight: bold;" text="Preço" textFill="WHITE">
+                                                   <VBox.margin>
+                                                      <Insets bottom="10.0" />
+                                                   </VBox.margin>
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="textFieldProductPrice" prefHeight="40.0">
+                                                   <VBox.margin>
+                                                      <Insets left="10.0" right="10.0" />
+                                                   </VBox.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </TextField>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </VBox>
+                                          <VBox alignment="TOP_CENTER" layoutX="893.0" layoutY="10.0" prefHeight="98.0">
+                                             <children>
+                                                <Label style="-fx-font-weight: bold;" text="Total" textFill="WHITE">
+                                                   <VBox.margin>
+                                                      <Insets bottom="10.0" />
+                                                   </VBox.margin>
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="textFieldProductTotalPrice" prefHeight="40.0" prefWidth="240.0">
+                                                   <VBox.margin>
+                                                      <Insets left="10.0" right="20.0" />
+                                                   </VBox.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </TextField>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="1.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Region prefHeight="75.0" prefWidth="564.0" HBox.hgrow="ALWAYS" />
+                                          <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                             <children>
+                                                <Label style="-fx-font-weight: bold;" text="Quantidade" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                   <HBox.margin>
+                                                      <Insets right="10.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <Spinner fx:id="spinner" prefHeight="40.0" prefWidth="74.0" />
+                                             </children>
+                                          </HBox>
+                                          <Button fx:id="buttonAdd" mnemonicParsing="false" prefHeight="40.0" prefWidth="118.0" style="-fx-font-size: 14; -fx-font-weight: bold;" text="Adicionar" HBox.hgrow="ALWAYS">
+                                             <HBox.margin>
+                                                <Insets right="20.0" />
+                                             </HBox.margin>
+                                          </Button>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="20.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="3.0" left="5.0" />
+                                 </VBox.margin>
+                              </VBox>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="639.0" prefWidth="1122.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox prefHeight="639.0" prefWidth="371.0">
+                           <children>
+                              <Region prefHeight="118.0" prefWidth="210.0" />
+                              <HBox alignment="CENTER" prefHeight="72.0" prefWidth="210.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="135.0" style="-fx-font-weight: bold; -fx-background-color: #531a14; -fx-border-color: white; -fx-border-radius: 15; -fx-background-radius: 15;" text="Sale" textFill="#dc8888">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="70.0" prefWidth="210.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="135.0" style="-fx-font-weight: bold; -fx-background-color: #531a14; -fx-border-color: white; -fx-border-radius: 15; -fx-background-radius: 15;" text="History" textFill="#dc8888">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="10.0" layoutY="110.0" prefHeight="74.0" prefWidth="210.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="135.0" style="-fx-font-weight: bold; -fx-background-color: #531a14; -fx-border-color: white; -fx-border-radius: 15; -fx-background-radius: 15;" text="Config" textFill="#dc8888">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <VBox alignment="BOTTOM_LEFT" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label text="Contact">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="10.0" text="+258 868 660 661">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="30.0" text="miropedrolino@gmail.com">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <TableView fx:id="tableWiew" prefHeight="619.0" prefWidth="1095.0" HBox.hgrow="ALWAYS">
+                          <columns>
+                            <TableColumn fx:id="columnProductID" prefWidth="189.60003662109375" text="Código" />
+                            <TableColumn fx:id="columnProductName" prefWidth="180.0" text="Nome do produto" />
+                              <TableColumn fx:id="columnPrice" prefWidth="186.39996337890625" text="Preço" />
+                              <TableColumn fx:id="columnQuantity" prefWidth="192.79986572265625" text="Quantidade" />
+                              <TableColumn fx:id="columnTotal" prefWidth="180.80010986328125" text="Total" />
+                          </columns>
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" top="20.0" />
+                           </HBox.margin>
+                        </TableView>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="864.0" prefWidth="360.0" style="-fx-background-color: #ca5246;">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="360.0">
+                     <children>
+                        <Label style="-fx-font-weight: bold;" text="Total">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelTotal" text="0.00" textFill="#d4d111">
+                           <font>
+                              <Font name="System Bold" size="48.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="60.0" right="60.0" />
+                     </padding>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="20.0" prefHeight="100.0" prefWidth="360.0">
+                     <children>
+                        <Label style="-fx-font-weight: bold;" text="Pagamento">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textFieldPay" prefHeight="42.0" prefWidth="311.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></TextField>
+                     </children>
+                     <padding>
+                        <Insets left="60.0" right="60.0" />
+                     </padding>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="154.0" prefHeight="100.0" prefWidth="360.0">
+                     <children>
+                        <Label style="-fx-font-weight: bold;" text="Troco">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textFieldBalance" prefHeight="42.0" prefWidth="311.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></TextField>
+                     </children>
+                     <padding>
+                        <Insets left="60.0" right="60.0" />
+                     </padding>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="452.0" prefWidth="360.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Button fx:id="buttonPrintBill" mnemonicParsing="false" prefHeight="40.0" prefWidth="118.0" text="Confirmar">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <TextArea fx:id="textArea" prefHeight="396.0" prefWidth="339.0">
+                           <VBox.margin>
+                              <Insets left="10.0" right="10.0" top="20.0" />
+                           </VBox.margin>
+                        </TextArea>
+                     </children>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
